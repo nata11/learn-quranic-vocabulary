@@ -1,5 +1,7 @@
 # Learn Quranic Vocabulary
 
+**Live site:** [nata11.github.io/learn-quranic-vocabulary](https://nata11.github.io/learn-quranic-vocabulary/)
+
 An open, mobile-friendly study site for the example phrases in
 *How to Understand 85% of the Qur'ān* by Drs. Islām Fekry — built so
 anyone can read each phrase in Uthmani script, hear it recited by

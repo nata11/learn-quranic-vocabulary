@@ -38,6 +38,10 @@ mark.focus {
   font-weight: 600;
   padding: 0;
 }
+/* Arabic faces (Amiri Quran, Scheherazade New) get visibly heavier when
+   bolded, which makes the focus word feel disproportionately thick next
+   to the surrounding text. Keep the green, drop the bold. */
+.arabic mark.focus { font-weight: inherit; }
 
 /* ============================================================
    Collapsible left-nav drawer

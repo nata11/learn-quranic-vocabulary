@@ -84,8 +84,9 @@ repository — they are the author's copyrighted work. Get them from
 
 ## License
 
-The site code (HTML, CSS, JS) is provided as a community study tool.
-The Quranic text is in the public domain. The Sahih International
-translation is freely redistributable. The recitation is provided by
-its respective CDNs. The book content itself is not redistributed here
-— please buy the book from the author.
+The site code (HTML, CSS, JS) is released under the [MIT License](LICENSE).
+The Qur'anic text is in the public domain. The Sahih International
+translation is freely redistributable under its own terms. The
+recitation is provided by its respective CDNs under their terms. The
+book content itself is not redistributed here — please buy the book
+from [store.arabic101.org](https://store.arabic101.org).

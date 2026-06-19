@@ -64,7 +64,6 @@ More chapters will be added one at a time.
 │   └── Coursebook/Phrases.html                 Interactive deck
 ├── Chapter 2 - Negations & Exceptions/
 │   └── Coursebook/Phrases.html                 Interactive deck
-├── Resources/Uthmani Font Samples.html         Font comparison
 └── assets/                                     Shared CSS/JS/icons
 ```
 

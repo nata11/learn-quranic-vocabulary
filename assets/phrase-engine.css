@@ -1,0 +1,224 @@
+/* =====================================================================
+   phrase-engine.css — shared styles for every chapter's Phrases.html.
+   Used together with assets/phrase-engine.js, assets/chapters.js,
+   assets/favicon.svg, and assets/apple-touch-icon.png.
+   ===================================================================== */
+
+:root {
+  --bg:         #faf9f5;
+  --card:       #ffffff;
+  --ink:        #1d1d1b;
+  --muted:      #6b6b66;
+  --accent:     #1F4E79;
+  --accent-soft:#eaf1f8;
+  --border:     #e8e6df;
+  --gold:       #92400e;
+  --gold-soft:  #fef3c7;
+  --green:      #40A040; /* coursebook focus-word green */
+  --green-soft: #dcfce7;
+  --red:        #991b1b;
+  --red-soft:   #fee2e2;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg); color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 15px; line-height: 1.5;
+}
+
+/* ============================================================
+   Focus-word highlight (vocab being introduced in this group).
+   Used inside .arabic and .english on phrase cards.
+   ============================================================ */
+mark.focus {
+  background: transparent;
+  color: var(--green);
+  font-weight: 600;
+  padding: 0;
+}
+
+/* ============================================================
+   Collapsible left-nav drawer
+   ============================================================ */
+.nav-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; padding: 0;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: white; cursor: pointer; color: var(--ink);
+  flex-shrink: 0;
+}
+.nav-toggle:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.nav-toggle svg  { width: 18px; height: 18px; display: block; }
+
+.nav-backdrop {
+  position: fixed; inset: 0; background: rgba(20,20,18,0.36);
+  opacity: 0; pointer-events: none; transition: opacity 0.18s ease;
+  z-index: 40;
+}
+.nav-backdrop.open { opacity: 1; pointer-events: auto; }
+
+.nav-drawer {
+  position: fixed; top: 0; left: 0; bottom: 0; width: 280px;
+  background: var(--card); border-right: 1px solid var(--border);
+  transform: translateX(-100%); transition: transform 0.22s ease;
+  z-index: 50; display: flex; flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+.nav-drawer.open { transform: translateX(0); }
+.nav-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 18px; border-bottom: 1px solid var(--border);
+}
+.nav-head .brand { font-weight: 600; font-size: 14px; letter-spacing: 0.02em; }
+.nav-head .brand .ar {
+  font-family: 'Amiri Quran', serif; font-weight: 400;
+  font-size: 18px; margin-right: 8px; color: #111;
+}
+.nav-close {
+  width: 32px; height: 32px; border: 1px solid var(--border); border-radius: 6px;
+  background: white; cursor: pointer; color: var(--muted);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.nav-close:hover    { color: var(--accent); border-color: var(--accent); }
+.nav-close svg      { width: 14px; height: 14px; }
+
+.nav-section {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); padding: 18px 18px 6px; font-weight: 600;
+}
+.nav-list { list-style: none; padding: 0 8px; margin: 0; }
+.nav-list li { margin: 2px 0; }
+.nav-list a {
+  display: block; padding: 10px 12px; border-radius: 6px;
+  color: var(--ink); text-decoration: none; font-size: 14px;
+  transition: background 0.12s ease;
+}
+.nav-list a:hover { background: var(--accent-soft); }
+.nav-list a[aria-current="page"] {
+  background: var(--accent-soft); color: var(--accent); font-weight: 600;
+}
+.nav-list a .num {
+  font-size: 11px; color: var(--accent); letter-spacing: 0.06em;
+  text-transform: uppercase; display: block; margin-bottom: 1px;
+}
+.nav-foot {
+  margin-top: auto; padding: 14px 18px; border-top: 1px solid var(--border);
+  font-size: 12px; color: var(--muted);
+}
+
+/* ============================================================
+   Header + toolbar + main
+   ============================================================ */
+header {
+  padding: 18px 28px 14px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: flex-start; gap: 14px;
+}
+header .titles { min-width: 0; }
+h1 { margin: 0 0 4px; font-size: 22px; font-weight: 600; }
+header .sub { margin: 0; color: var(--muted); font-size: 13px; }
+
+.toolbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; flex-wrap: wrap; gap: 18px; align-items: center;
+  padding: 12px 32px; background: rgba(255,255,255,0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: saturate(180%) blur(6px);
+}
+.toolbar label  { font-size: 13px; color: var(--muted); display: inline-flex; align-items: center; gap: 8px; }
+.toolbar select { padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; background: white; font-size: 13px; }
+.toolbar input[type=range] { vertical-align: middle; }
+.status { font-size: 12px; color: var(--muted); margin-left: auto; }
+
+main { padding: 22px 32px 64px; max-width: 1100px; margin: 0 auto; }
+
+/* ============================================================
+   Phrase groups + cards
+   ============================================================ */
+.group { margin: 28px 0 8px; }
+.group h2 {
+  font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--accent); margin: 0 0 10px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.group h2 .ar {
+  font-family: 'Amiri Quran', serif; font-size: 22px; font-weight: 400;
+  text-transform: none; letter-spacing: 0; margin-left: 12px; color: var(--green);
+}
+
+.card {
+  display: grid; grid-template-columns: 56px 1fr; gap: 16px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 18px 20px; margin: 10px 0;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.02);
+}
+.play {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid var(--border); background: white; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--accent); transition: all 0.15s ease;
+  align-self: start;
+}
+.play:hover         { background: var(--accent-soft); border-color: var(--accent); }
+.play:disabled      { opacity: 0.4; cursor: wait; }
+.play.playing       { background: var(--accent); color: white; border-color: var(--accent); }
+.play svg           { width: 18px; height: 18px; display: block; }
+
+.body .arabic {
+  direction: rtl; text-align: right; line-height: 2.05;
+  color: #111; margin: 2px 0 8px; word-spacing: 0.08em;
+}
+.body .english {
+  font-style: italic; color: #2a2a26; margin: 0 0 6px;
+  font-size: 17px; line-height: 1.5;
+}
+.body .meta {
+  display: flex; gap: 12px; align-items: center;
+  font-size: 12px; color: var(--muted);
+}
+.ref { font-weight: 600; color: var(--accent); }
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 1px 8px; border-radius: 999px; font-size: 11px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.pill.ok    { background: var(--green-soft); color: var(--green); }
+.pill.full  { background: var(--gold-soft);  color: var(--gold); }
+.pill.fail  { background: var(--red-soft);   color: var(--red); }
+.dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.7; }
+
+/* ============================================================
+   Help + Diagnostics panels
+   ============================================================ */
+details.help { margin: 22px 0 6px; }
+details.help summary { cursor: pointer; color: var(--accent); font-size: 13px; }
+details.help .body {
+  background: white; border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 18px; margin-top: 8px; font-size: 13px; line-height: 1.55;
+}
+.legend { display: inline-flex; gap: 6px; align-items: center; margin-right: 16px; }
+
+.diag-btn {
+  padding: 6px 12px; font-size: 12px; border: 1px solid var(--border);
+  background: white; border-radius: 6px; cursor: pointer; margin-right: 6px;
+}
+.diag-btn:hover { background: var(--accent-soft); }
+#diagLog {
+  background: #0f172a; color: #e2e8f0; padding: 12px; border-radius: 6px;
+  font-size: 11px; line-height: 1.4; max-height: 280px; overflow: auto;
+  margin: 8px 0 0; white-space: pre-wrap;
+}
+#diagLog .ok  { color: #4ade80; }
+#diagLog .err { color: #f87171; }
+
+/* ============================================================
+   Mobile / iPad portrait tweaks
+   ============================================================ */
+@media (max-width: 520px) {
+  header  { padding: 14px 18px 12px; }
+  .toolbar{ padding: 12px 18px; gap: 14px; }
+  main    { padding: 18px 18px 64px; }
+}

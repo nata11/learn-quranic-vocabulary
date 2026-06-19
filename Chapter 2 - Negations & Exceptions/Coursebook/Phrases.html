@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 2 — Negations &amp; Exceptions | Quranic Phrases</title>
+
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../assets/phrase-engine.css">
+</head>
+<body>
+<script>
+  window.CHAPTER_CURRENT = 2;
+  window.PHRASES = [
+    {p:"نَعَمۡ",pe:"Yes",v:"7:44",a:"قَالُواْ نَعَمۡ",e:"They will say, “Yes.”"},
+    {p:"نَعَمۡ",pe:"Yes",v:"7:114",a:"قَالَ نَعَمۡ وَإِنَّكُمۡ لَمِنَ ٱلۡمُقَرَّبِينَ",e:"He said, “Yes, and you will be among my favorites.”"},
+
+    {p:"بَلَىٰ",pe:"Yes, indeed (affirmative reply to a negative question)",v:"2:81",a:"بَلَىٰ مَن كَسَبَ سَيِّئَةً وَأَحَٰطَتۡ بِهِۦ خَطِيٓـَٔتُهُۥ",e:"Yes indeed — whoever commits misdeeds, and becomes besieged by his iniquities"},
+    {p:"بَلَىٰ",pe:"Yes, indeed (affirmative reply to a negative question)",v:"2:112",a:"بَلَىٰ مَنۡ أَسۡلَمَ وَجۡهَهُۥ لِلَّهِ وَهُوَ مُحۡسِنٞ",e:"Indeed — whoever submits his face in Islam to Allāh while being a doer of good",eh:["indeed"]},
+
+    {p:"كَلَّا",pe:"Certainly not (emphatic negation)",v:"19:79",a:"كَلَّا سَنَكۡتُبُ مَا يَقُولُ",e:"No indeed! We will write what he says,",eh:["No indeed"]},
+    {p:"كَلَّا",pe:"Certainly not (emphatic negation)",v:"23:100",a:"كَلَّا إِنَّهَا كَلِمَةٌ هُوَ قَآئِلُهَا",e:"Certainly not! It is just a word he is saying."},
+
+    {p:"إِلَّا",pe:"Except",v:"3:2",a:"ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُ",e:"Allāh — there is no deity except Him, the Ever-Living, the Sustainer of all existence."},
+    {p:"إِلَّا",pe:"Except",v:"2:255",a:"مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦ",e:"Who is he that can intercede with Him except with His permission?"},
+
+    {p:"إِنۡ … إِلَّا",pe:"Nothing but (negation + exception)",v:"4:62",a:"إِنۡ أَرَدۡنَآ إِلَّآ إِحۡسَٰنٗا وَتَوۡفِيقٗا",e:"We intended nothing but good conduct and accommodation.",eh:["nothing but"]},
+    {p:"إِنۡ … إِلَّا",pe:"Nothing but (negation + exception)",v:"37:15",a:"إِنۡ هَٰذَآ إِلَّا سِحۡرٞ مُّبِينٞ",e:"This is nothing but plain magic.",eh:["nothing but"]},
+
+    {p:"مَا … إِلَّا",pe:"Nothing but (negation + exception)",v:"5:117",a:"مَا قُلۡتُ لَهُمۡ إِلَّا مَآ أَمَرۡتَنِي بِهِۦ",e:"I said not to them except what You commanded me",eh:["not","except"]},
+    {p:"مَا … إِلَّا",pe:"Nothing but (negation + exception)",v:"23:24",a:"مَا هَٰذَآ إِلَّا بَشَرٞ مِّثۡلُكُمۡ",e:"This is nothing but a human like you,",eh:["nothing but"]},
+
+    {p:"أَلَّا",pe:"That … not / so as not to",v:"12:40",a:"أَمَرَ أَلَّا تَعۡبُدُوٓاْ إِلَّآ إِيَّاهُ",e:"He has commanded that you worship none but Him.",eh:["none but"]},
+    {p:"أَلَّا",pe:"That … not / so as not to",v:"14:12",a:"وَمَا لَنَآ أَلَّا نَتَوَكَّلَ عَلَى ٱللَّهِ",e:"And why should we not rely upon Allāh",eh:["not"]},
+
+    {p:"لَا",pe:"Do(es) not (general present-tense negation)",v:"88:11",a:"لَّا تَسۡمَعُ فِيهَا لَٰغِيَةٗ",e:"Wherein they will hear no unsuitable speech.",eh:["no"]},
+    {p:"لَا",pe:"Do(es) not (general present-tense negation)",v:"88:7",a:"لَّا يُسۡمِنُ وَلَا يُغۡنِي مِن جُوعٍ",e:"That neither nourishes, nor satisfies hunger.",eh:["neither","nor"]},
+
+    {p:"مَا",pe:"Not (present or past)",v:"2:9",a:"وَمَا يَخۡدَعُونَ إِلَّآ أَنفُسَهُمۡ",e:"but they deceive none but themselves",eh:["none but"]},
+    {p:"مَا",pe:"Not (present or past)",v:"2:102",a:"وَمَا كَفَرَ سُلَيۡمَٰنُ",e:"Solomon disbelieved not",eh:["not"]},
+
+    {p:"لَنۡ",pe:"Will not (future negation)",v:"12:66",a:"لَنۡ أُرۡسِلَهُۥ مَعَكُمۡ",e:"“I will not send him with you”",eh:["will not"]},
+    {p:"لَنۡ",pe:"Will not (future negation)",v:"12:80",a:"فَلَنۡ أَبۡرَحَ ٱلۡأَرۡضَ",e:"“I will not leave this land”",eh:["will not"]},
+
+    {p:"لَمۡ",pe:"Did not (past negation)",v:"2:151",a:"وَيُعَلِّمُكُم مَّا لَمۡ تَكُونُواْ تَعۡلَمُونَ",e:"and teaching you that which you did not know;",eh:["did not"]},
+    {p:"لَمۡ",pe:"Did not (past negation)",v:"2:247",a:"وَلَمۡ يُؤۡتَ سَعَةٗ مِّنَ ٱلۡمَالِ",e:"and he was not given plenty of wealth",eh:["was not"]},
+
+    {p:"لَيۡسَ",pe:"(There is) no — masculine",v:"88:6",a:"لَّيۡسَ لَهُمۡ طَعَامٌ إِلَّا مِن ضَرِيعٖ",e:"For them, there will be no food except from a poisonous, thorny plant",eh:["there will be no"]},
+    {p:"لَيۡسَ",pe:"(There is) no — masculine",v:"24:29",a:"لَّيۡسَ عَلَيۡكُمۡ جُنَاحٌ",e:"There is no blame on you",eh:["There is no"]},
+
+    {p:"لَيۡسَتِ",pe:"(There is) no — feminine",v:"2:113",a:"لَيۡسَتِ ٱلنَّصَٰرَىٰ عَلَىٰ شَيۡءٖ",e:"“The Christians are not based on anything”",eh:["are not"]},
+
+    {p:"غَيۡرُ",pe:"Other than / not",v:"28:71",a:"مَنۡ إِلَٰهٌ غَيۡرُ ٱللَّهِ يَأۡتِيكُم بِضِيَآءٍ",e:"What deity other than Allāh could bring you light?",eh:["other than"]},
+    {p:"غَيۡرُ",pe:"Other than / not",v:"1:7",a:"صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ",e:"The path of those upon whom You have bestowed favor, not of those who have evoked Your anger",eh:["not"]},
+
+    {p:"مِن دُونِ",pe:"Apart from",v:"29:22",a:"وَمَا لَكُم مِّن دُونِ ٱللَّهِ مِن وَلِيّٖ وَلَا نَصِيرٍ",e:"And apart from Allāh you have no protector or helper.",eh:["apart from"]},
+    {p:"مِن دُونِ",pe:"Apart from",v:"29:25",a:"إِنَّمَا ٱتَّخَذۡتُم مِّن دُونِ ٱللَّهِ أَوۡثَٰنٗا",e:"“You have only taken, apart from Allāh, idols”",eh:["apart from"]},
+  ];
+</script>
+<script src="../../assets/chapters.js"></script>
+<script src="../../assets/phrase-engine.js"></script>
+</body>
+</html>

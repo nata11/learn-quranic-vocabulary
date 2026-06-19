@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 — Demonstrative Pronouns | Quranic Phrases</title>
+
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../assets/phrase-engine.css">
+</head>
+<body>
+<script>
+  window.CHAPTER_CURRENT = 1;
+  window.PHRASES = [
+    {p:"هَٰذَا",pe:"This (masculine singular)",v:"2:25",a:"قَالُواْ هَـٰذَا ٱلَّذِي رُزِقۡنَا مِن قَبۡلُ",e:"They will say, “This is what we were provided with before,”"},
+    {p:"هَٰذَا",pe:"This (masculine singular)",v:"2:26",a:"مَاذَآ أَرَادَ ٱللَّهُ بِهَٰذَا مَثَلًا",e:"“What did Allāh intend by this example?”"},
+    {p:"هَٰذَا",pe:"This (masculine singular)",v:"30:56",a:"فَهَٰذَا يَوۡمُ ٱلۡبَعۡثِ",e:"This is the Day of Resurrection"},
+    {p:"ذَٰلِكَ",pe:"That (masculine singular)",v:"2:2",a:"ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَ فِيهِ",e:"This [that] is the Book in which there is no doubt"},
+    {p:"ذَٰلِكَ",pe:"That (masculine singular)",v:"45:24",a:"وَمَا لَهُم بِذَٰلِكَ مِنۡ عِلۡمٍ إِنۡ هُمۡ إِلَّا يَظُنُّونَ",e:"Of that they have no knowledge; they are only assuming."},
+    {p:"ذَٰلِكَ",pe:"That (masculine singular)",v:"74:9",a:"فَذَٰلِكَ يَوۡمَئِذٍ يَوۡمٌ عَسِيرٌ",e:"That Day will be a difficult day."},
+    {p:"هَٰذِهِ",pe:"This (feminine singular)",v:"7:19",a:"وَلَا تَقۡرَبَا هَٰذِهِ ٱلشَّجَرَةَ",e:"but do not approach this tree"},
+    {p:"هَٰذِهِ",pe:"This (feminine singular)",v:"16:30",a:"لِلَّذِينَ أَحۡسَنُواْ فِي هَٰذِهِ ٱلدُّنۡيَا حَسَنَةٌ",e:"For those who do good in this world, is goodness."},
+    {p:"هَٰذِهِ",pe:"This (feminine singular)",v:"26:155",a:"قَالَ هَٰذِهِۦ نَاقَةٌ لَّهَا شِرۡبٌ",e:"“This is a she-camel; she has her turn of drinking,”"},
+    {p:"تِلۡكَ",pe:"That (feminine singular)",v:"2:134",a:"تِلۡكَ أُمَّةٌ قَدۡ خَلَتۡ",e:"That was a nation that has passed on;"},
+    {p:"تِلۡكَ",pe:"That (feminine singular)",v:"6:83",a:"وَتِلۡكَ حُجَّتُنَآ ءَاتَيۡنَٰهَآ إِبۡرَٰهِيمَ عَلَىٰ قَوۡمِهِۦ",e:"That was Our argument which We gave to Abraham against his people."},
+    {p:"هَٰٓؤُلَآءِ",pe:"These (plural)",v:"4:41",a:"وَجِئۡنَا بِكَ عَلَىٰ هَٰٓؤُلَآءِ شَهِيدًا",e:"and We bring you as a witness against these?"},
+    {p:"هَٰٓؤُلَآءِ",pe:"These (plural)",v:"6:53",a:"أَهَٰٓؤُلَآءِ مَنَّ ٱللَّهُ عَلَيۡهِم",e:"“Are these the ones whom Allāh has favored from among us?”"},
+    {p:"أُوْلَٰٓئِكَ",pe:"Those (plural)",v:"2:5",a:"أُوْلَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمۡ وَأُوْلَٰٓئِكَ هُمُ ٱلۡمُفۡلِحُونَ",e:"Those are upon [right] guidance from their Lord, and it is those who are the successful."},
+    {p:"أُوْلَٰٓئِكَ",pe:"Those (plural)",v:"2:160",a:"فَأُوْلَٰٓئِكَ أَتُوبُ عَلَيۡهِمۡ وَأَنَا ٱلتَّوَّابُ ٱلرَّحِيمُ",e:"Those—I will accept their repentance. I am the Acceptor of Repentance, the Merciful."},
+    {p:"ٱلَّذِي",pe:"He who / that which (masculine singular)",v:"2:17",a:"مَثَلُهُمۡ كَمَثَلِ ٱلَّذِي ٱسۡتَوۡقَدَ نَارًا",e:"Their likeness is that of a person who kindled a fire;",eh:["who"]},
+    {p:"ٱلَّذِي",pe:"He who / that which (masculine singular)",v:"2:259",a:"أَوۡ كَٱلَّذِي مَرَّ عَلَىٰ قَرۡيَةٍ",e:"Or like him who passed by a town",eh:["who"]},
+    {p:"ٱلَّذِي",pe:"He who / that which (masculine singular)",v:"3:72",a:"ءَامِنُواْ بِٱلَّذِيٓ أُنزِلَ عَلَى ٱلَّذِينَ ءَامَنُواْ",e:"Believe in that which was revealed to the believers",eh:["that which"]},
+    {p:"ٱلَّتِي",pe:"She who / that which (feminine singular)",v:"3:131",a:"وَٱتَّقُواْ ٱلنَّارَ ٱلَّتِيٓ أُعِدَّتۡ لِلۡكَٰفِرِينَ",e:"And guard yourselves against the Fire that is prepared for the disbelievers.",eh:["that"]},
+    {p:"ٱلَّتِي",pe:"She who / that which (feminine singular)",v:"23:96",a:"ٱدۡفَعۡ بِٱلَّتِي هِيَ أَحۡسَنُ ٱلسَّيِّئَةَ",e:"Repel evil by what is better.",eh:["what"]},
+    {p:"ٱلَّتِي",pe:"She who / that which (feminine singular)",v:"16:92",a:"وَلَا تَكُونُواْ كَٱلَّتِي نَقَضَتۡ غَزۡلَهَا",e:"And do not be like her who untwisted her spun thread,",eh:["her who"]},
+    {p:"ٱلَّذِينَ",pe:"Those who(m) (masculine plural)",v:"1:7",a:"صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ",e:"The path of those whom You have blessed,",eh:["those whom"]},
+    {p:"ٱلَّذِينَ",pe:"Those who(m) (masculine plural)",v:"3:105",a:"وَلَا تَكُونُواْ كَٱلَّذِينَ تَفَرَّقُواْ",e:"And do not be like those who became divided",eh:["those who"]},
+    {p:"ٱلَّذِينَ",pe:"Those who(m) (masculine plural)",v:"6:10",a:"فَحَاقَ بِٱلَّذِينَ سَخِرُواْ مِنۡهُم",e:"But those who mocked them were enveloped by what they used to ridicule.",eh:["those who"]},
+    {p:"ٱلَّتِي",pe:"Those which (non-human plural)",v:"7:157",a:"وَيَضَعُ عَنۡهُمۡ إِصۡرَهُمۡ وَٱلۡأَغۡلَٰلَ ٱلَّتِي كَانَتۡ عَلَيۡهِمۡ",e:"And relieves them of their burden and the shackles which were upon them.",eh:["which"]},
+    {p:"ٱلَّتِي",pe:"Those which (non-human plural)",v:"11:101",a:"فَمَآ أَغۡنَتۡ عَنۡهُمۡ ءَالِهَتُهُمُ ٱلَّتِي يَدۡعُونَ مِن دُونِ ٱللَّهِ",e:"And they were not availed at all by their gods which they invoked other than Allāh.",eh:["which"]},
+    {p:"هَٰذِهِ",pe:"These (non-human plural)",v:"6:138",a:"وَقَالُواْ هَٰذِهِۦٓ أَنۡعَٰمٌ وَحَرۡثٌ حِجۡرٌ لَّا يَطۡعَمُهَآ إِلَّا مَن نَّشَآءُ بِزَعۡمِهِمۡ",e:"And they say, “These animals and crops are forbidden; no one may eat from them except whom we will,” by their claim."},
+    {p:"هَٰذِهِ",pe:"These (non-human plural)",v:"21:52",a:"إِذۡ قَالَ لِأَبِيهِ وَقَوۡمِهِۦ مَا هَٰذِهِ ٱلتَّمَاثِيلُ ٱلَّتِيٓ أَنتُمۡ لَهَا عَٰكِفُونَ",e:"When he said to his father and his people, “What are these statues to which you are devoted?”"},
+    {p:"تِلۡكَ",pe:"Those (non-human plural)",v:"2:111",a:"تِلۡكَ أَمَانِيُّهُمۡ",e:"Those are their wishes."},
+    {p:"تِلۡكَ",pe:"Those (non-human plural)",v:"4:13",a:"تِلۡكَ حُدُودُ ٱللَّهِ",e:"Those are the bounds set by Allāh."},
+  ];
+</script>
+<script src="../../assets/chapters.js"></script>
+<script src="../../assets/phrase-engine.js"></script>
+</body>
+</html>

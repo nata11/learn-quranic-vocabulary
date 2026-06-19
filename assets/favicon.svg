@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background navy disc -->
+  <circle cx="32" cy="32" r="32" fill="#1F4E79"/>
+  <!-- Bowl (ring) -->
+  <circle cx="29.4" cy="39.7" r="14" fill="#ffffff"/>
+  <circle cx="29.4" cy="39.7" r="8.4" fill="#1F4E79"/>
+  <!-- Short ascending stroke on the right -->
+  <rect x="38.7" y="23.0" width="4.8" height="13.0" rx="2.4" fill="#ffffff"/>
+  <!-- Two dots above the bowl -->
+  <circle cx="26.8" cy="14.7" r="2.0" fill="#ffffff"/>
+  <circle cx="32.0" cy="14.7" r="2.0" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Quranic Vocab">
+<title>Learn Quranic Vocabulary</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #faf9f5;
+    --card: #ffffff;
+    --ink: #1d1d1b;
+    --muted: #6b6b66;
+    --accent: #1F4E79;
+    --accent-soft: #eaf1f8;
+    --border: #e8e6df;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 16px; line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 44px 24px 80px; }
+
+  h1 { font-size: 28px; margin: 0 0 6px; font-weight: 600; }
+  h1 .ar {
+    font-family: 'Amiri Quran', serif; font-weight: 400;
+    font-size: 30px; margin-right: 10px; color: #111;
+  }
+  .lede { margin: 0 0 36px; color: var(--muted); font-size: 15px; max-width: 720px; }
+
+  h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--accent); margin: 32px 0 14px; font-weight: 600;
+  }
+
+  /* Two-column chapter grid, collapses to one on narrow screens */
+  .grid {
+    display: grid; gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    display: block; padding: 18px 20px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    text-decoration: none; color: var(--ink);
+    transition: all 0.12s ease;
+    min-height: 100%;
+  }
+  .card:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .card .num { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+  .card .title { font-size: 17px; font-weight: 600; margin: 2px 0 4px; }
+  .card .sub { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* Single-column lists (Resources) */
+  .card-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+
+  .footer {
+    margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--border);
+    font-size: 13px; color: var(--muted);
+  }
+  .footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1><span class="ar">قرآن</span>Learn Quranic Vocabulary</h1>
+<p class="lede">
+  Interactive phrase decks from <em>How to Understand 85% of the Qur'ān</em>
+  by Drs. Islām Fekry. Reciter: Mishary bin Rashid al-Afasy. Audio plays the
+  phrase span only, trimmed at runtime from the full ayah.
+</p>
+
+<h2>Chapters</h2>
+<div class="grid">
+  <a class="card" href="Chapter%201%20-%20Demonstrative%20Pronouns/Coursebook/Phrases.html">
+    <div class="num">Chapter 1 · List 1</div>
+    <div class="title">Demonstrative Pronouns</div>
+    <div class="sub">30 example phrases · هَٰذَا · ذَٰلِكَ · هَٰذِهِ · تِلۡكَ · هَٰٓؤُلَآءِ · أُوْلَٰٓئِكَ · ٱلَّذِي · ٱلَّتِي · ٱلَّذِينَ</div>
+  </a>
+  <a class="card" href="Chapter%202%20-%20Negations%20%26%20Exceptions/Coursebook/Phrases.html">
+    <div class="num">Chapter 2 · List 2</div>
+    <div class="title">Negations &amp; Exceptions</div>
+    <div class="sub">28 example phrases · نَعَمۡ · بَلَىٰ · كَلَّا · إِلَّا · أَلَّا · لَا · مَا · لَنۡ · لَمۡ · لَيۡسَ · غَيۡرُ · مِن دُونِ</div>
+  </a>
+</div>
+
+<h2>Resources</h2>
+<ul class="card-list">
+  <li>
+    <a class="card" href="Resources/Uthmani%20Font%20Samples.html">
+      <div class="num">Reference</div>
+      <div class="title">Uthmani Font Samples</div>
+      <div class="sub">Compare candidate Arabic fonts side-by-side.</div>
+    </a>
+  </li>
+</ul>
+
+<div class="footer">
+  <p>To install on iPad: open this page in Safari, tap <strong>Share → Add to Home Screen</strong>. The icon opens the deck full-screen, like an app.</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -83,6 +83,19 @@ repository — they are the author's copyrighted work. Get them from
   the EveryAyah CDN.
 - **Translation:** Sahih International.
 
+## Found an error?
+
+If you spot a mistake in any Arabic phrase (a missing diacritic,
+incorrect rasm, wrong word) or in an English translation, please
+let me know by opening a GitHub issue:
+
+[github.com/nata11/learn-quranic-vocabulary/issues](https://github.com/nata11/learn-quranic-vocabulary/issues)
+
+Please include the chapter, the verse reference (e.g. `2:25`), and
+what the correction should be. Even a one-line note helps — accuracy
+of the Qur'anic text and its translation matters more than anything
+else on this site.
+
 ## License
 
 The site code (HTML, CSS, JS) is released under the [MIT License](LICENSE).
